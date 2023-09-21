@@ -28,9 +28,15 @@ app.use(express.static('public'));
 app.get('/', (req, res) => {
     res.render('login');
 });
-
+app.get('/cadastro', (req, res) => {
+  res.render('cadastro');
+});
 app.get('/agenda', (req, res) => {
     res.render('agenda'); // 'agenda' é o nome do arquivo EJS da página de agenda
+  });
+
+  app.get('/calendario', (req, res) => {
+    res.render('calendario'); // 'agenda' é o nome do arquivo EJS da página de agenda
   });
 
 // Rota de login
